@@ -71,6 +71,15 @@ public class DemonOperator {
     q *= 3;
     System.out.println(q);
 
+    // comparison
+    int scoreA = 91;
+    boolean isGradeA = scoreA >= 90;
+    System.out.println(isGradeA); // true
+
+    char gender = 'F';
+    boolean isFemale = gender != 'M';
+    System.out.println(isFemale);
+
   }
   
 }
