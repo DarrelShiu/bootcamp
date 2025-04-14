@@ -40,10 +40,12 @@ public class DemoDataType {
     System.out.println(a);
 
     // Declaration and assignment
-    int w = 10;
+    int a1 = 10;
+    System.out.println(a1);
 
     // ! 2. double
     double d1 = 4.4;
+    System.out.println(d1);
     double d2 = 4.32433423435435; // double decimal place 70 to 80
     System.out.println(d2);
     
@@ -70,4 +72,3 @@ public class DemoDataType {
 
     }
 }
-
