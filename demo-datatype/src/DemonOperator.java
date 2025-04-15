@@ -26,7 +26,7 @@ public class DemonOperator {
     // int/int -> int
     System.out.println(5 / 2); // 2
     // double / int -> double / double
-    System.err.println(5.0/2); //2.5
+    System.out.println(5.0/2); //2.5
 
     // int score1 = 71;
     // int score2 = 82;

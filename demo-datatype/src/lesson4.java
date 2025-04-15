@@ -15,7 +15,7 @@ public class lesson4 {
     int i1 = 3;
     long l1 = 3;
 
-    // byte (-128  -127)
+    // byte (-128  127)
     // short (-32xxx  32xxx)
     // int (-2100M  2100M)
     // long (2^63)
