@@ -98,5 +98,8 @@ public class lesson4 {
     // step 1: think whether it is a safe value -> add f or L since Java default int and double
     // step 2: int + int -> int; int + long -> long
 
+    char c3 = 'a';
+    System.out.println(c3);
+
   }
 }

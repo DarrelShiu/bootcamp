@@ -58,12 +58,13 @@ public class DemoString {
     // byte,short,bit,long
     // int i30 = 10;
     double i30 = 10.0;
-    // float i30 = 10.0f;
+    float f30 = 10.0f;
     int i31 = 7;
     double i32 = i30 / i31;
-    System.out.println("This value is " + i32);
-
-    System.out.println("This value is " + 5 / 2.0);
+    float f32 = f30 / i31;
+    System.out.println("This double value is " + i32);
+    System.out.println("This float value is " + f32);
+    // System.out.println("This value is " + 5 / 2.0);
 
     byte b10 = 127;
     short s10 = 3;
@@ -71,10 +72,92 @@ public class DemoString {
 
     float f1 = 0.1f;
     float f2 = 0.6f;
-    System.out.println(f1 + f2);
+    System.out.println(f1 / f2);
+
+    double d1 = 0.7;
+    double d2 = 0.1;
+    System.out.println(d1 / d2);
 
     short b30 = 32767;
     System.out.println((short)(b30 + 3));
+
+    int i33 = 7;
+    int result = ++i33 * 6;
+    // System.out.println(result);
+
+    int i34 = 5;
+    int i35 = 9;
+    result = i34 += i35 / 3 + 6;
+    // System.out.println(result);
+
+    System.out.println(3 + 4 * 4 > 5 * (4 + 3) - 1);
+    System.out.println(3 + 4 * 4 > 5 * 7 - 1);
+    System.out.println(3 + 16 > 35 - 1);
+    System.out.println(19 > 35 - 1);
+
+    double d6 = 7.2;
+    boolean isAboveAvg = d6 > 7;
+    System.out.println(isAboveAvg);
+
+    int i36 = 5;
+    result = (++i36 + 3) * (++i36 +3); //* ++i36; // i36 + 1 the i36 + 1 -> 9*10
+    // System.out.println(result);
+
+    int i37 = 5;
+    result = (i37++ + 3) * (i37++ + 3); // i37 + 3 then i37 +1 then i37+1 -> 9*5*8
+    System.out.println(result);
+
+    boolean isCar = "BMW" != "Benz";
+    System.out.println(isCar);
+
+    short s12 = 32767;
+    short s13 = (short)32768;
+    System.out.println(s13);
+
+    /*extend data type */
+    byte b12 = 127;
+    short b13 = (short)b12; // byte b13 = b12 + 1;
+    b13 += 100;
+    System.out.println(b13);  //Type mismatch: cannot convert from int to byte
+
+    short s14 = 32767;
+    int s15 = (int)s14;
+    s15 *= s15;
+    System.out.println(s15);  //Type mismatch: cannot convert from int to short
+
+    int i23 = 2_147_483_647;
+    double d7 = (double)i23;
+    d7 *= 1155;  //2.147483647E12,2.3622320117E12
+    System.out.println(d7);
+
+    double d8 = 2_147_483_648L;
+    System.out.println(d8);
+
+    /*store at lower storage */
+    byte b14 = (byte)129;
+    System.out.println(b14);
+
+    short b15 = (short)-32770;
+    System.out.println(b15);
+
+    int i14 = (int)2_147_483_649L;
+    System.out.println(i14);
+
+    float f3 = 0.1f;
+    /*double d9 = (double)f3;*/
+
+    float f4 = 1.2345678912f;
+    System.out.println(f4);
+
+    double d10 = 1.1234567812345678d;
+    System.out.println(d10);
+
+    String s5 = "abcde";
+    System.out.println(s5.charAt(3));
+
+    char c4 = 'A';
+    int i15 = (int)c4;
+    System.out.println(i15);
 
   }  
 }
