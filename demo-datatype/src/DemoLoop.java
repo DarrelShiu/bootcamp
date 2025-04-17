@@ -45,13 +45,16 @@ public class DemoLoop {
     }
 
     String s2 = "bootcamp";
+    int index = -1;
     for (i = 0; i < s2.length(); i++) {
       if (s2.charAt(i) == 'm') {
-        System.out.println(i);
-      } else {
-        System.out.println(-1);
-      }
+        // System.out.println(i);
+        index = i;
+      } //else {
+      //   System.out.println(-1);
+      // }
     }
+    System.out.println(index);
 
   }
   
