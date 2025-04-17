@@ -110,7 +110,7 @@ public class DemoString {
     boolean isCar = "BMW" != "Benz";
     System.out.println(isCar);
 
-    short s12 = 32767;
+    // short s12 = 32767;
     short s13 = (short)32768;
     System.out.println(s13);
 
@@ -144,7 +144,8 @@ public class DemoString {
     System.out.println(i14);
 
     float f3 = 0.1f;
-    /*double d9 = (double)f3;*/
+    double d9 = (double)f3;
+    System.out.println(d9);
 
     float f4 = 1.2345678912f;
     System.out.println(f4);
