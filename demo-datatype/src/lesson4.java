@@ -101,5 +101,7 @@ public class lesson4 {
     char c3 = 'a';
     System.out.println(c3);
 
+    
+
   }
 }

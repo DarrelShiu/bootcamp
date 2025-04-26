@@ -162,5 +162,64 @@ public class DemoString {
 
     // thanks
 
+    // ! Function 4: indexOf(), lastIndexof()
+    String s12 = "Sally";
+    System.out.println(s12.indexOf('a')); // single quotation for single character, double quotation for string
+    System.out.println(s12.indexOf("a"));
+    System.out.println(s12.indexOf("l"));  // 2, first chatacter
+    System.out.println(s12.lastIndexOf("l"));
+
+
+    // ! Function 5: contains()
+    System.out.println(s12.contains("ll"));
+    System.out.println(s12.contains("lll"));
+
+    // ! Function6: startsWith(), endsWith()
+    System.out.println(s12.startsWith("Sa"));
+    System.out.println(s12.endsWith("Sa"));
+
+    // ! Function7: isEmpty()
+    String s20 = "";
+    System.out.println(s20.isEmpty());
+
+    if (s20.isEmpty()) {
+      System.out.println("\"yes Enpty");
+    } else {
+      System.out.println("\"No empty");
+    }
+
+    System.out.println("?");
+
+    // ! Function 8: concat()
+    String s21 ="abc";
+    System.out.println(s21.concat("def"));
+
+    // ! Function 9: replace()
+    String s22 = "hello";
+    System.out.println(s22.replace("e", "xx"));
+
+    // ! Function 10: substring()
+    String s23 = "helloworld";
+    System.out.println(s23.substring(4,7));
+    
+    // ! Funtion 11: toLowerCase(), toUpperCase()
+    System.out.println(s22.toLowerCase());
+    System.out.println(s22.toUpperCase());
+
+    // ! Function12: .valueOf() -> conversion
+    int x1 = 3;
+    String ss = String.valueOf(x1); // double.valueOf
+    System.out.println(ss);
+    // String ss1 = String.valueOf(3.3)
+
+    double d11 = Double.valueOf(3.3);
+    System.out.println(d11);
+
+    // char[] chs = "Jacky".toCharArray();
+    // System.out.println(chs);
+    
+
+
+
   }  
 }
