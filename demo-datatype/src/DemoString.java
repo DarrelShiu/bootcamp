@@ -216,7 +216,7 @@ public class DemoString {
     System.out.println(d11);
 
     // char[] chs = "Jacky".toCharArray();
-    // System.out.println(chs);
+    // System.out.println(chs[2]);
     
 
 
