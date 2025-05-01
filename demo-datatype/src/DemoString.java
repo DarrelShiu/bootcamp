@@ -192,7 +192,7 @@ public class DemoString {
 
     // ! Function 8: concat()
     String s21 ="abc";
-    System.out.println(s21.concat("def"));
+    System.out.println(s21.concat("def").concat("ghi"));
 
     // ! Function 9: replace()
     String s22 = "hello";

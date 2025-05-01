@@ -18,5 +18,10 @@ public class DemoMath {
 
     System.out.println(Math.max(3, 9.0));
 
+    System.out.println(Math.max(4, 5));
+
+    System.out.println(Math.PI);
+
+
   }
 }

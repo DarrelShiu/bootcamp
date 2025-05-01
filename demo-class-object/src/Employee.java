@@ -65,7 +65,7 @@ public class Employee {
     System.out.println(e2.getAge());
     System.out.println(e2.getEmail());
 
-    // e1 = e2;  // e1 point to e2 now
+    // e1 = e2;  // e1 point to e2 now, if no address is pointed to e1, auto cabbage delete 
     // System.out.println(e1.getname());  // Sally
     // System.out.println(e2.getname());  // Sally
   }

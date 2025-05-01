@@ -1,5 +1,7 @@
 package src;
 
+// use Wrapper -> benefit: use method (e.g. valueOf, parseint)
+
 public class DemoWrapper {
   public static void main(String[] args) {
     // 8 Primitive
@@ -49,8 +51,21 @@ public class DemoWrapper {
     System.out.println(x1 + x2);
     System.out.println(x3 * x2);
 
-
+    // Long x5 = 3;
+    // Long x6 = 2;
     System.out.println(Long.valueOf(3).compareTo(Long.valueOf(2)));
+
+    Integer value = Integer.valueOf(13); // created a object with value 13 in heap
+    value = 14;
+    System.out.println(value);
+
+    Integer num5 = Integer.valueOf(128);
+    System.out.println(num5);
+
+    // Convert string to double
+    double d2 = Double.parseDouble("0.33") + 0.3;
+    System.out.println("this is converted double: " + d2);
+
   }
   
 }

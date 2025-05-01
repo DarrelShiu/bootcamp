@@ -20,6 +20,7 @@ public class DemoBigDecimal {
     double d1 = bd3.doubleValue();
     int i1 = bd3.intValue();
     long l1 = bd3.longValue();
+    short s11 = bd3.shortValue();
 
     String s1 = bd3.toString();
     System.out.println(s1);
@@ -36,8 +37,8 @@ public class DemoBigDecimal {
 
     // multiply -> handle decimal places
     // 3.333 * 2 -> 6.666 -> round 2 dp -> 6.67
-    double result7 = BigDecimal.valueOf(3.333).multiply(BigDecimal.valueOf(2)).setScale(2, RoundingMode.HALF_UP).doubleValue();
-    System.out.println(result7);
+    double result7 = BigDecimal.valueOf(1.75).multiply(BigDecimal.valueOf(3.65)).setScale(3, RoundingMode.HALF_EVEN).doubleValue();  // 6.3875
+    System.out.println("The result of multiplication is :" + result7);
 
     // divide
     System.out.println(0.3 / 0.1);
@@ -46,14 +47,14 @@ public class DemoBigDecimal {
 
     // 10 / 3 -> 3.33333......
     // Non-terminating decimal expansion
-    double result4 = BigDecimal.valueOf(10).divide(BigDecimal.valueOf(3), 2, RoundingMode.DOWN).doubleValue();
-    System.out.println(result4);
+    double result4 = BigDecimal.valueOf(10).divide(BigDecimal.valueOf(3), 3, RoundingMode.HALF_EVEN).doubleValue();
+    System.out.println("The result of division1 is :" + result4);
 
-    double result5 = BigDecimal.valueOf(16.5).divide(BigDecimal.valueOf(2), 1, RoundingMode.HALF_UP).doubleValue();  // 8.25 -> 8.3
-    System.out.println(result5);
+    double result6 = BigDecimal.valueOf(17).divide(BigDecimal.valueOf(3), 3, RoundingMode.HALF_EVEN).doubleValue();  // 8.666666
+    System.out.println("The result of division2 is :" + result6);
 
-    double result6 = BigDecimal.valueOf(16.5).divide(BigDecimal.valueOf(2), 1, RoundingMode.HALF_DOWN).doubleValue();  // 8.25 -> 8.2
-    System.out.println(result6);
+    double result5 = BigDecimal.valueOf(16.5).divide(BigDecimal.valueOf(2), 1, RoundingMode.HALF_EVEN).doubleValue();  // 8.25 -> 8.3
+    System.out.println("The result of division3 is :" + result5);
 
     // x divide 0 -> undefined
     //  0 divide x -> 0
