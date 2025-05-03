@@ -2,7 +2,7 @@ package src;
 
 import java.time.LocalDate;
 
-public class stock {
+public class Stock {
 
   String stockNumber = "0000";
   String stockName = "ABC";
@@ -39,8 +39,8 @@ public class stock {
   }
 
   public static void main(String[] args) {
-    stock stock1 = new stock();
-    stock stock2 = new stock();
+    Stock stock1 = new Stock();
+    Stock stock2 = new Stock();
 
     stock1.setStock("12345", "ACB company", 3.125, LocalDate.now().plusDays(-1), LocalDate.now());
     stock2.setStock("12346", "AC co", 4.666, LocalDate.now().plusDays(-10), LocalDate.now());
