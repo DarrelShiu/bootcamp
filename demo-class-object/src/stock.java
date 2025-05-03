@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class Stock {
 
-  String stockNumber = "0000";
-  String stockName = "ABC";
-  double endOfDayPrice = 0.00d;
-  LocalDate buyDate = LocalDate.now();
-  LocalDate sellDate = LocalDate.now();
+  private String stockNumber = "0000";
+  private String stockName = "ABC";
+  private double endOfDayPrice = 0.00d;
+  private LocalDate buyDate = LocalDate.now();
+  private LocalDate sellDate = LocalDate.now();
 
   public void setStock (String stockName, String stockNumber, double price, LocalDate buyDate, LocalDate sellDate) {
     this.stockName = stockName;
