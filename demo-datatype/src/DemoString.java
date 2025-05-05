@@ -218,8 +218,16 @@ public class DemoString {
     // char[] chs = "Jacky".toCharArray();
     // System.out.println(chs[2]);
     
+    // ! add string
+    String num1 = "11";
+    String num2 = "123";
+    Integer intNum1 = Integer.valueOf(num1);
+    Integer intNum2 = Integer.valueOf(num2);
+    int num3 = 0;
 
+    num3 = intNum1 + intNum2;
 
+    System.out.println(num3);
 
   }  
 }
