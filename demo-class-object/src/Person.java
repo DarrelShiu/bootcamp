@@ -22,6 +22,10 @@ public class Person {
     this.weight = 0.0;
   } 
 
+  public void exercise () {
+    this.weight -= 1;
+  }
+
   // ! method
   // BMI -> double
   // isOverWeight -> boolean (bmi > 25)
@@ -33,7 +37,7 @@ public class Person {
     }
 
     public boolean isOverWeight () {
-        if (bmi() >= 25.0) {
+        if (this.bmi() >= 25.0) {
             return true;
         } else {
             return false;
@@ -43,11 +47,11 @@ public class Person {
   // main 
   // Person[] -> p1, p2, p3
   // for loop () -> array -> print out their bmi and weight status
-  public static void main(String[] args) {
+  public static void main(String[] args) {  // main mean test the program 
     Person[] persons = new Person[3];
-    persons[0] = new Person(1.75, 70);  //22.85714
-    persons[1] = new Person(1.71, 90);  //30.77870
-    persons[2] = new Person(1.68, 80);  //28.34467
+    persons[0] = new Person(1.75, 70);  //22.85714, persons[0] - object 0
+    persons[1] = new Person(1.71, 90);  //30.77870, persons[1] - object 1
+    persons[2] = new Person(1.68, 80);  //28.34467, persons[2] - object 2
     
     System.out.println("p1's bmi is " + persons[0].bmi() + '\n' + "is overweighted? " + persons[0].isOverWeight());
     System.out.println("p2's bmi is " + persons[1].bmi() + '\n' + "is overweighted? " + persons[1].isOverWeight());

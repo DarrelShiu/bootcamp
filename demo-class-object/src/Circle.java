@@ -2,7 +2,7 @@ package src;
 
 import java.math.BigDecimal;
 
-// ! Auther
+// ! Auther of circle -> control the access (read/write) of the objects
 public class Circle {
   private double radius;
   private String colour;
@@ -22,7 +22,7 @@ public class Circle {
     return this.radius;
   }
 
-  // what is the implication of "no setter"
+  // what is the implication of "no setter"?
   // 1. we cannot modify the data of object after day1 creation.
 
   // type of Method: Presenation
