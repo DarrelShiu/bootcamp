@@ -15,6 +15,11 @@ public class Order {
     this.items = new Item[0]; // array without length
   }
 
+  // public Order(Item item) {  // force to issue at least one item
+  //   this.items = new Item[1];
+  //   this.items[0] = item;
+  // }
+
   public void add(Item newItem) {
     Item[] newItems = new Item[this.items.length + 1];
     for (int i = 0; i < this.items.length; i++) {

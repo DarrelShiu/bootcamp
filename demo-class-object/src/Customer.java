@@ -10,18 +10,26 @@ public class Customer {
     this.orders = new Order[0];
   }
 
+  public String getName() {
+    return this.name;
+  }
+
+  public long getId() {
+    return this.id;
+  }
+
   public void add(Order newOrder) {
       Order[] newOrders = new Order[this.orders.length + 1];
       for (int i = 0; i < this.orders.length; i++) {
         newOrders[i] = orders[i];
       }
       newOrders[newOrders.length - 1] = newOrder;
-      this.orders = newOrders;
+      this.orders = newOrders; // replace the original array
   }
 
   public double orderAmount() {
     double grandTotal = 0.0;
-    for (int i = 0; i < this.orders.length; i++) {
+    for (int i = 0; i < this.orders.length; i++) { // consider no order 
       grandTotal += this.orders[i].checkoutAmount();
     }
     return grandTotal;
@@ -33,13 +41,18 @@ public class Customer {
     } else {
       return false;
     }
+    // return orderAmount() > 100_000 ? true : false;
 
+  }
+
+  public void setName(String name) {
+    this.name = name;
   }
 
   // main()
   // John -> many orders -> items
   public static void main(String[] args) {
-    Customer john = new Customer();
+    Customer john = new Customer();  // "new" -> calling, "Customer()" constructor
     Customer peter = new Customer();
 
     Order orderA = new Order();
