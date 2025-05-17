@@ -40,6 +40,13 @@ public class Circle {
             .doubleValue(); //
   }
 
+  public static double area2(double radius) {
+      return BigDecimal.valueOf(radius)
+      .multiply(BigDecimal.valueOf(radius))
+      .multiply(BigDecimal.valueOf(Math.PI))
+      .doubleValue();
+  }
+
   // ! the user of the Circle class -> 
   public static void main(String[] args) {
     Circle c1 = new Circle(3.5, "RED");
@@ -69,6 +76,8 @@ public class Circle {
     .multiply(BigDecimal.valueOf(radius))  //
     .multiply(BigDecimal.valueOf(Math.PI))
     .doubleValue();
+
+    System.out.println(Circle.area2(1.0));
   }
 
 }

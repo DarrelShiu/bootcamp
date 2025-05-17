@@ -15,12 +15,12 @@ public class Staff {
     // author use equal how to define same object 
     // in computer "new" object can use same attributes (e.g. same radius and color). therefore, in computer, using same radius and color can create many objects
 
-    public boolean equals(Staff staff) {
-      if (this.id == staff.getId()) {
-        return true;
-      }
-      return false;
-    }
+    // public boolean equals(Staff staff) {
+    //   if (this.id == staff.getId()) {
+    //     return true;
+    //   }
+    //   return false;
+    // }
   
     public static void main(String[] args) {
       Staff s1 = new Staff(1L); // real world id is unique but in coding is allowed two objects with one id
@@ -34,5 +34,9 @@ public class Staff {
       // ! by default, Java implicity say that equals() checking object's address
 
       // after rewriting the equals method, new Staff(1) equals new Staff(1)
+
+      String s3 = "hello";
+      System.out.println(s3.equals("hello"));
+
     }
 }

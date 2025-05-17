@@ -67,8 +67,12 @@ public class Child {
     System.out.println(c1.equals(new Child("Peter", "Chan")));    
 
     Child c2 = new Child("Leo", "Wong");
+    Child c3 = new Child("Leo", "Wong");
     System.out.println(c2.getID());
-    System.out.println(c2.equals(new Child("Leo", "Wong")));
+    System.out.println(c3.getID());
+    System.out.println(c2.equals(new Child("Leo", "Wong"))); // if you used id for identification, why still use another way for identify
+    // System.out.println(c2.equals("6"));
+
   }
   
 }
