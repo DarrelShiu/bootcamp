@@ -76,15 +76,38 @@ public class Teacher {
     }
     
     // Check student's pocket
+    // for (int i = 0; i < s1.getCandy().length; i++) {
+    //   System.out.println("Name: " + s1.getName() + " ID: " + s1.getCandy()[i].getId() + " Colour: " + s1.getCandy()[i].getColour() + " Flavour: " + s1.getCandy()[i].getFlavour() + " Weight: " + s1.getCandy()[i].getWeight());
+    // }
+    // for (int i = 0; i < s2.getCandy().length; i++) {
+    //   System.out.println("Name: " + s2.getName() + " ID: " + s2.getCandy()[i].getId() + " Colour: " + s2.getCandy()[i].getColour() + " Flavour: " + s2.getCandy()[i].getFlavour() + " Weight: " + s2.getCandy()[i].getWeight());
+    // }
+    // for (int i = 0; i < s3.getCandy().length; i++) {
+    //   System.out.println("Name: " + s3.getName() + " ID: " + s3.getCandy()[i].getId() + " Colour: " + s3.getCandy()[i].getColour() + " Flavour: " + s3.getCandy()[i].getFlavour() + " Weight: " + s3.getCandy()[i].getWeight());
+    // }
+
     for (int i = 0; i < s1.getCandy().length; i++) {
-      System.out.println("Name: " + s1.getName() + " ID: " + s1.getCandy()[i].getId() + " Colour: " + s1.getCandy()[i].getColour() + " Flavour: " + s1.getCandy()[i].getFlavour() + " Weight: " + s1.getCandy()[i].getWeight());
+      if (s1.getCandy()[i].getColour() == "Red") {
+        System.out.println("Name: " + s1.getName() + " ID: " + s1.getCandy()[i].getId() + " Colour: " + s1.getCandy()[i].getColour() + " Flavour: " + s1.getCandy()[i].getFlavour() + " Weight: " + s1.getCandy()[i].getWeight());
+      }
     }
+
     for (int i = 0; i < s2.getCandy().length; i++) {
-      System.out.println("Name: " + s2.getName() + " ID: " + s2.getCandy()[i].getId() + " Colour: " + s2.getCandy()[i].getColour() + " Flavour: " + s2.getCandy()[i].getFlavour() + " Weight: " + s2.getCandy()[i].getWeight());
+      if (s2.getCandy()[i].getColour() == "Red") {
+        System.out.println("Name: " + s2.getName() + " ID: " + s2.getCandy()[i].getId() + " Colour: " + s2.getCandy()[i].getColour() + " Flavour: " + s2.getCandy()[i].getFlavour() + " Weight: " + s2.getCandy()[i].getWeight());
+      }
     }
+
     for (int i = 0; i < s3.getCandy().length; i++) {
-      System.out.println("Name: " + s3.getName() + " ID: " + s3.getCandy()[i].getId() + " Colour: " + s3.getCandy()[i].getColour() + " Flavour: " + s3.getCandy()[i].getFlavour() + " Weight: " + s3.getCandy()[i].getWeight());
+      if (s3.getCandy()[i].getColour() == "Red") {
+        System.out.println("Name: " + s3.getName() + " ID: " + s3.getCandy()[i].getId() + " Colour: " + s3.getCandy()[i].getColour() + " Flavour: " + s3.getCandy()[i].getFlavour() + " Weight: " + s3.getCandy()[i].getWeight());
+      }
     }
+
+    System.out.println(s1.getCandy().length);
+    System.out.println(s2.getCandy().length);
+    System.out.println(s3.getCandy().length);
+
 
     // for (int i = 0; i < 20; i++) {
     //   System.out.println(t1.candies[i]);
