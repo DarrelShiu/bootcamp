@@ -43,8 +43,8 @@ public class Circle extends Shape {
     System.out.println(o2.toString()); // java.lang.Object@1f32e575
     System.out.println(o3.toString()); // java.lang.Object@5305068a
 
-    Card c1 = new Card('C', 'A');
-    Card c2 = new Card('C', 'J');
+    Card c1 = new Card('D', 'A');
+    Card c2 = new Card('S', 'J');
     System.out.println(c1.equals(c2)); 
     // false, if it is using Object.equals(). we do not override.
     // ! Object.equals() is checking address
@@ -62,8 +62,8 @@ public class Circle extends Shape {
    String s1 = new String("hello");
    String s2 = new String("hello");
    System.out.println(s1.equals(s2)); // True // ! primitive use ==
-   System.out.println(s1.compareTo(s2));
-   System.out.println(x.compareTo(10));
+  //  System.out.println(s1.compareTo(s2));
+  //  System.out.println(x.compareTo(10));
    System.out.println(c1.compareTo(c2));
   }
 }

@@ -23,6 +23,10 @@ public class Card {
     return this.suit;
   }
 
+  public int getPosFrom() {
+    return this.positionFrom;
+  }
+
   // ! Override false -> true
   @Override
   public boolean equals(Object obj) {
@@ -50,19 +54,18 @@ public class Card {
      + ")";
   }
 
-  @Override
   // ACE Diamond vs King Diamond -> 1
   // King Diamond vs ACE Diamond -> -1
-  public int compareTo(Card card) {
+  public int compareTo(Card card) {  //Card card
     // rank
     //  Spade -> Heart -> Club -> Dimond
     for (int i = 0; i < cardArr.length; i++) {
       for (int j = 0; j < cardArr[i].length; j++) {
-          if (cardArr[i][j] == String.valueOf(this.suit)) {
+          if (cardArr[i][j].equals(Character.toString(this.suit))) {  //String.valueOf('C') //this.suit
             positionFrom = (cardArr[i].length - j - 1) * 13 + 1;
             break;
           }
-          if (cardArr[i][j] == String.valueOf(this.rank)) {
+          if (cardArr[i][j].equals(Character.toString(this.rank))) {  //String.valueOf('2') //this.rank
             positionFrom += 12 - j;
             break;
           }
@@ -71,17 +74,18 @@ public class Card {
 
     for (int i = 0; i < cardArr.length; i++) {
       for (int j = 0; j < cardArr[i].length; j++) {
-          if (cardArr[i][j] == String.valueOf(card.getSuit())) {
+          if (cardArr[i][j].equals(Character.toString(card.getSuit()))) {
             positionTo = (cardArr[i].length - j - 1) * 13 + 1;
             break;
           }
-          if (cardArr[i][j] == String.valueOf(card.getRank())) {
+          if (cardArr[i][j].equals(Character.toString(card.getRank()))) {
             positionTo += 12 - j;
             break;
           }
       }
     }
-    return positionFrom;
+    return (positionFrom - positionTo);
+
   }
 
 
@@ -105,6 +109,9 @@ public class Card {
       }
     }
     System.out.println(position);
+
+    System.out.println(Character.toString('C'));
+
   }
  
 }
