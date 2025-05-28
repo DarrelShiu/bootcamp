@@ -1,6 +1,6 @@
 package src;
 
-public class Dog {
+public class Dog extends Animal {
   private String name;
 
   public Dog(String name) {
@@ -12,5 +12,8 @@ public class Dog {
   }
 
   @Override
-  public boolean equals(Object)
+  public void walk() {
+    System.out.println("Bird is walking ...");
+}
+
 }
