@@ -34,3 +34,6 @@ ${\color{#000000}DEF}$
 
 §colorName[Text]
 
+
+**01062025** DeepSeek search by Customizing ArithmeticException Messages in Java
+
