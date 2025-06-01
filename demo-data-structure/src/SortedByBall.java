@@ -23,8 +23,8 @@ public class SortedByBall implements Comparator<Ball> {
       if (b2.getColor() == Ball.Color.BLUE)
         return 1;
       return -1;
-    } else  {
+    } 
       return -(b1.getNum() - b2.getNum());
-    }
+    
   }
 }

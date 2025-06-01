@@ -39,13 +39,13 @@ public class Ball {
   public static void main(String[] args) {
     List<Ball> balls = new ArrayList<>();
     balls.add(new Ball(Color.RED, 23));
-    // balls.add(new Ball(Color.BLUE, 2));
-    // balls.add(new Ball(Color.YELLOW, 5));
-    // balls.add(new Ball(Color.BLUE, 7));
+    balls.add(new Ball(Color.BLUE, 2));
+    balls.add(new Ball(Color.YELLOW, 5));
+    balls.add(new Ball(Color.BLUE, 7));
     balls.add(new Ball(Color.RED, 1000));
-    // balls.add(new Ball(Color.BLUE, 59));
-    // balls.add(new Ball(Color.YELLOW, 9));
-    // balls.add(new Ball(Color.BLUE, 10));
+    balls.add(new Ball(Color.BLUE, 59));
+    balls.add(new Ball(Color.YELLOW, 9));
+    balls.add(new Ball(Color.BLUE, 10));
 
     // Arrays.sort() -> sort array
 
